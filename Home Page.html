@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Home</title>
+<meta name="google-site-verification" content="8l55acWUlP2F8YMvBZDmsBsRG8WsltChS7eW2OJV4GA" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+	body ,h1,h2,h3,h4,h5,h6 {
+	background-color:white;
+	font-family: "Amatic SC" , sans serif;
+	}
+	
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #38444d;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a, .dropbtn {
+	  display: inline-block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}		
+
+	li a:hover, .dropdown:hover .dropbtn {
+		background-color: red;
+	}
+
+	li.dropdown {
+		display: inline-block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+
+	.dropdown-content a:hover {background-color: #f1f1f1;}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+</style>
+</head>
+<body>
+
+<!------------ Pull Down Menu ----------------------------------------->
+<div class="w3-container">	
+	<div class="w3-bar w3-light-grey">
+	
+	<div class="w3-dropdown-hover">
+		<button onclick="myFunction()" class="w3-button w3-light-grey"> Home</button>
+			<div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+				<a href="About Me.html" class="w3-bar-item w3-button">About Me</a>
+			</div>
+	</div>
+			
+	<div class="w3-dropdown-hover">
+		<button onclick="myFunction()" class="w3-button w3-light-grey"> Interest </button>
+			<div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+			<a href="Interest 1.html" class="w3-bar-item w3-button">Interest 1</a>
+			<a href="Interest 2.html" class="w3-bar-item w3-button">Interest 2</a>
+		</div>
+	</div>
+		<a href="Resume.html" class="w3-bar-item w3-button">Resume</a>
+		<a href="Resources.html" class="w3-bar-item w3-button">Resources</a>
+</div>
+		
+<!------------ Image background ----------------------------------------->
+<div style="height:900px;background-image:url('Gambar/coffee2.jpg');background-size:cover" class="w3-display-container w3-grayscale-min">
+	<div class="w3-display-middle w3-center">
+		<span class="w3-text-white" style="font-size:100px">Pipol Call me Tipo In UiTM</span>
+		<p><a href="About Me.html" class="w3-button w3-xxlarge w3-black">About Me</a></p>
+	</div>
+</div>
+
+
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+</body>
+</html>

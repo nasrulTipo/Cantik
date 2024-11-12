@@ -1,0 +1,335 @@
+<html>
+<head>
+<title>About Me</title>
+<meta charset="utf-8">
+<meta name="google-site-verification" content="8l55acWUlP2F8YMvBZDmsBsRG8WsltChS7eW2OJV4GA" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  body {
+    background-image: url("Gambar/awan2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a,
+  .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+	
+<!------------ Header Grid ----------------------------------------->
+
+	*{
+	  box-sizing: border-box;
+	}
+
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.header {
+	  background-color: #f1f1f1;
+	  padding: 30px;
+	  text-align: center;
+	  font-size: 35px;
+	  color : White;
+	  border: 2px solid #ccc;
+	  border-radius: 20px;
+	  width: 50%;
+	  margin:0 420px;
+	  margin-right: 20px;
+	}
+	
+	.column {
+	  float: left;
+	  width: 33.33%;
+	  padding: 05px;
+	  height: 300px; 
+	  border: 2px solid #ccc;
+	  border-radius: 20px;
+	  
+	}
+
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.footer {
+	  background-color: #f1f1f1;
+	  padding: 10px;
+	  text-align: center;
+	  border: 2px solid #ccc;
+	  border-radius: 20px;
+	}
+	
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media (max-width: 600px) {
+	  .column {
+		width: 100%;
+	  }
+	}
+<!------------ header size ----------------------------------------->
+	
+	h2{
+		text-align:left;
+		position: top;
+		color: White;
+	}
+	
+	h3{
+		text-align:left;
+		color: White;
+	}
+	
+	p {
+		font-size: 18px;
+		color : Black;
+	}
+	
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.left-header {
+		width: 50%;
+	}
+	
+	.right-header {
+		width: 50%;
+	}
+<!------------ Slide Presentation ----------------------------------------->
+	.mySlides {display:none;}
+	
+	.card-container {
+	  display: flex;
+	  justify-content:center;
+	}
+	
+	.card-description {
+	  align-items: center;
+	  width: 600px;
+	  background-color: #f4f4f4;
+	  border-radius: 10px;
+	  padding: 20px;
+	  text-align: center;
+	  margin: 0 auto;
+	  margin-bottom: 50px;
+	}
+	
+</style>
+</head>
+<body>
+
+<!------------ Pull Down Menu ----------------------------------------->
+<div class="w3-container">	
+	<div class="w3-bar w3-light-grey">
+	<div class="w3-dropdown-hover">
+		<button onclick="myFunction()" class="w3-button w3-light-grey"> Home</button>
+			<div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+				<a href="Home Page.html" class="w3-bar-item w3-button">Home page</a>
+			</div>
+	</div>
+			
+	<div class="w3-dropdown-hover">
+		<button onclick="myFunction()" class="w3-button w3-light-grey"> Interest </button>
+			<div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+			<a href="Interest 1.html" class="w3-bar-item w3-button">Interest 1</a>
+			<a href="Interest 2.html" class="w3-bar-item w3-button">Interest 2</a>
+		</div>
+	</div>
+		<a href="Resume.html" class="w3-bar-item w3-button">Resume</a>
+		<a href="Resources.html" class="w3-bar-item w3-button">Resources</a>
+	</div>
+</div>
+
+<!------------ About Me ---------------------------------------->
+<div class="w3-container">
+<br><br>
+	<div class="card-container">
+	<div class="card-description" style="color :Black">
+		<h2>About Me</h2>
+		<h4>Bismillah...</h4>
+	</div>
+	</div>
+	<div class="header" style="text-align: center;">
+		<img src="Gambar/AM3.jpg" alt="Header Image" style="width:340px;" height="480px" >
+		<p>My Name is Nasrul Azri Bin Ahmad Sazali</p>
+		<p>Live in Nilai , Negeri Sembilan</p>
+		<p> Date Of Birth: 19 November 2003 </p>
+		<p> Matric Number : 2021814046 </p>
+		<p> Course : Science Computer And Mathematic </p>
+		<p> Email : nasrulazri1119@gmail.com</p>
+	</div>
+</div>
+
+<!------------ Body Picture ---------------------------------------->
+<br><br>
+	<div class="row">
+		<div class="column" style="background-color:#aaa;">  Me<br>
+			<img src="Gambar/AM4.jpg" alt="This is My FAMILY!!!" style="width:100%;border-radius: 20px;" height="100%">
+		</div>
+		<div class="column" style="background-color:#bbb;">UiTM Melaka Jasin<br>
+			<img src="Gambar/2.jpg" alt="This is My FAMILY!!!" style="width:100%;border-radius: 20px;" height="100%">
+		</div>
+		<div class="column" style="background-color:#ccc;">  Me<br>
+			<img src="Gambar/AM5.jpg" alt="This is My FAMILY!!!" style="width:100%;border-radius: 20px;" height="100%">
+		</div>
+		<div class="column" style="background-color:#ccc;">Jawatankuasa Sukan Pelajar<br>
+			<img src="Gambar/1.jpg" alt="This is My FAMILY!!!" style="width:100%;border-radius: 20px;" height="100%">
+		</div>
+		<div class="column" style="background-color:#ccc;">Me<br>
+			<img src="Gambar/AM6.jpg" alt="This is My FAMILY!!!" style="width:100%;border-radius: 20px;" height="100%">
+		</div>
+		<div class="column" style="background-color:#ccc;">Kolej Tun Sri Lanang A<br>
+			<img src="Gambar/3.jpg" alt="This is My FAMILY!!!" style="width:100%;border-radius: 20px;" height="100%">
+		</div>
+	</div> 
+	
+<br><br>
+<!------------ Footer ---------------------------------------->
+	
+<div class="footer" >
+	<p>My Family</p>
+</div>
+ 
+
+<!------------ Slide Presentation Picture ---------------------------------------->
+	<br>
+	<div class="w3-content w3-display-container">
+
+	<div class="w3-display-container mySlides">
+	  <img src="Gambar/mf1.png" style="width:100%">
+	</div>
+
+	<div class="w3-display-container mySlides">
+	  <img src="Gambar/mf2.png" style="width:100%">
+	</div>
+
+	<div class="w3-display-container mySlides">
+	  <img src="Gambar/mf3.png" style="width:100%">
+	</div>
+
+	<div class="w3-display-container mySlides">
+	  <img src="Gambar/mf4.png" style="width:100%">
+	</div>
+
+	<div class="w3-display-container mySlides">
+	  <img src="Gambar/mf5.png" style="width:100%">
+	</div>
+	
+	<div class="w3-display-container mySlides">
+	  <img src="Gambar/mf6.png" style="width:100%">
+	</div>
+
+	<div class="w3-display-container mySlides">
+	  <img src="Gambar/mf7.png" style="width:100%">
+	</div>
+	
+	<div class="w3-display-container mySlides">
+	  <img src="Gambar/mf8.png" style="width:100%">
+	</div>
+	
+	
+	<div class="w3-display-container mySlides">
+	  <img src="Gambar/mf9.png" style="width:100%">
+	</div>
+	
+	
+	<div class="w3-display-container mySlides">
+	  <img src="Gambar/mf10.png" style="width:100%">
+	</div>
+	
+	<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+	</div>
+	<br>
+	<div class="footer">
+		<p>Thats all About Me...</p>
+	</div> 
+		
+</div>
+
+<script>
+
+var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+		 x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+}
+
+</script>
+</body>
+</html>
+
+
